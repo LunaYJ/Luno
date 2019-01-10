@@ -191,8 +191,10 @@ pre {
 .excerpt {
   margin: 0;
   font-size: .9em;
-  color: #999999; }
-
+  color: #999999;
+  word-break: break-all;
+  word-wrap: break-word;
+}
 .intro {
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 1.2em;
@@ -299,7 +301,10 @@ hr {
   margin: 0 .3em -.4em 0;
   border: none;
   box-shadow: none; }
-
+.post a {
+  word-wrap: break-word;
+  word-break: break-all;
+}
 .post img {
   max-width: 100%;
   margin: 0 auto;
@@ -502,7 +507,10 @@ hr {
   height: 35px;
   background: rgba(51, 51, 51, 0.98);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center; }
+  /*text-align: center; */
+  text-align: left;
+  padding-left: 1em;
+}
 
 .btn-mobile-menu__icon,
 .btn-mobile-close__icon {
@@ -604,6 +612,7 @@ i {
 .post-list__meta--date {
   margin-right: .5em;
   color: #c7c7c7; }
+
 
 .post-list__meta--tags {
   margin-left: .5em; }
@@ -833,7 +842,14 @@ input[type="tel"] {
 
   .navigation__item {
     width: 100%;
-    margin: 0 0 .4em 0; } }
+    margin: 0 0 .4em 0; }
+  .post-list__meta--date, .post-list__meta--tags {
+    display: block;
+  }
+  .btn-border-small {
+    box-sizing: border-box;
+  }
+}
 @media all and (max-width: 340px) {
   .panel-main__inner {
     padding: 0 5%; }
