@@ -1,5 +1,9 @@
 # Vno, just another ghost theme
 
+## 2019-1-10
+
+不想这么好的主题被浪费，于是乎fork了下来，现在已兼容Ghost2.0
+
 ## Deprecated
 
 Since I am not using Ghost anymore, vno for Ghost will not be continued developed. I am moving to Jekyll now and I also ported vno to a Jekyll theme and simplify the configuration as well. If you are interested in that, please visit [Vno Jekyll](https://github.com/onevcat/vno-jekyll) for more information.

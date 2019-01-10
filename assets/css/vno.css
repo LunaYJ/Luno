@@ -146,7 +146,7 @@ code {
   padding: .1em .4em;
   background: #e8f2fb;
   border: 1px solid #c9e1f6;
-  border-radius: 3px;
+  /*border-radius: 3px;*/
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: .9em;
   vertical-align: bottom;
@@ -154,10 +154,10 @@ code {
 
 pre {
   margin-bottom: 1.3em;
-  padding: 1em 2.5%;
+  /*padding: 1em 2.5%;*/
   background: #e8f2fb;
-  border: 1px solid #c9e1f6;
-  border-radius: 3px;
+  /*border: 1px solid #c9e1f6;*/
+  /*border-radius: 3px;*/
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: .9em;
   font-weight: normal;
@@ -299,7 +299,7 @@ hr {
   text-align: center;
   display: block; }
 .post pre {
-  width: 95%;
+  /*width: 95%;*/
   overflow: auto; }
 .post hr {
   display: block;
@@ -837,3 +837,27 @@ input[type="tel"] {
   .btn, .navigation__item a {
     display: block;
     margin-bottom: .4em; } }
+
+
+/* for block of numbers */
+.hljs-ln td.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #CCC;
+  vertical-align: top;
+  padding-right: 5px;
+
+  /* your custom style here */
+}
+
+/* for block of code */
+.hljs-ln td.hljs-ln-code {
+  padding-left: 10px;
+}
