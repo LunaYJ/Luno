@@ -971,4 +971,7 @@ input[type="tel"] {
 .post-footer > .post-social h4 {
   font-size: 1.8rem;
 }
-
+.custom-tag-cloud a {
+  word-break: normal;
+  word-wrap: normal;
+}
