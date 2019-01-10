@@ -1,5 +1,12 @@
 $(document).ready(function() {
+    $('body').on('click', '.QR-inner > div',function(){
+        var img_url = $(this).find('img').attr('src');
+        imgPopUp(img_url);
 
+    })
+      .on('click', '.reward-box a', function(e){
+          $('.reward-pop').toggleClass('pop-open');
+      });
   $('a.blog-button').click(function() {
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return;
@@ -45,7 +52,7 @@ $(document).ready(function() {
 
       $('.navigation-wrapper').toggleClass('animated bounceInDown animated bounceOutUp');
     }
-    
+
     $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
   });
 });
