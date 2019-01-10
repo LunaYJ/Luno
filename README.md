@@ -50,6 +50,68 @@
 
 为了使用 Disqus 的评论系统，您需要从 Disqus 获取您自己的 `short name`。将其添加到 `comments.hbs` 的 `disqus_shortname` 中就可以了。然后您还需要将 `post.hbs` 中的 `{{!-- {{> comments}} --}}` 替换为 `{{> comments}}` 来使 Disqus 生效。
 
+## 开发
+
+为了简单地对主题进行修改和开发，您需要安装 sass 编译器以及 bourbon。如果您在本地有 ghost 环境的话，这些应该已经安装好了，因为 ghost 运行是需要这些部件的。
+
+您可以在终端中进行一些检查，来看看是否已经安装完成。如果没有问题的话，您应该可以在命令行后看到对应的工具的版本号。
+
+### SASS
+
+```bash
+sass -v
+> Sass 3.3.6 (Maptastic Maple)
+```
+
+如果 SASS 没有能正确安装的话，请参见 [Sass 安装页面](http://sass-lang.com/install)进行安装。
+
+### Bourbon
+
+```bash
+bourbon version
+> Bourbon 4.0.1
+```
+
+如果 Bourbon 没有能正确安装的话，请参见 [Bourbon 的网站](http://bourbon.io)进行安装。
+
+### 开始开发
+
+验证安装后就可以开始开发了。首先我们要将 bourbon 加载到 `scss` 文件夹里。
+
+在主题文件夹下执行 `bourbon install` 来加载 bourbon：
+
+```bash
+bourbon install --path assets/scss
+> bourbon files installed to assets/scss/bourbon/
+//Or "Bourbon files already installed, doing nothing." if you already installed it.
+```
+
+然后就可以使用 sass 的命令行工具来监视文件夹中的 scss 文件的改动，并自动重新编译了。
+
+```bash
+pwd
+> In the vno theme root folder: {blog_path}/content/themes/vno
+
+sass --watch assets/scss/vno.scss:assets/css/vno.css
+>>>> Sass is watching for changes. Press Ctrl-C to stop.
+```
+
+现在，任何对于 scss 文件的改动都将自动反映到最终的 `/css/vno.css` 文件中了。
+
+### OSX Maverick
+
+有些人在运行 `sass --watch` 时可能会遇到如下错误：
+
+```bash
+> LoadError: cannot load such file -- rb-fsevent
+  Use --trace for backtrace.
+```
+
+这是一个 Sass 在 OSX Maverick 下的[已知问题](http://stackoverflow.com/questions/22413834/getting-error-when-using-command-line-for-sass-to-watch-files)，新版本中应该已经修复。请尝试将 Sass 升级到最新版本，或者安装 `rb-fsevent` 这个gem：
+
+```bash
+gem install rb-fsevent
+```
 
 ### 祝你好运
 
