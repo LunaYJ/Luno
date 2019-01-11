@@ -1,4 +1,11 @@
 {
-  "name": "Luno",
-  "version": "0.1.1"
+  "name": "luno",
+  "version": "0.1.1",
+  "author": {
+    "email": "luna_yj@hotmail.com",
+    "name": "Luna Shu"
+  },
+  "config": {
+    "posts_per_page": 10
+  }
 }
