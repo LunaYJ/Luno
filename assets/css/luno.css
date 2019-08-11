@@ -914,6 +914,7 @@ input[type="tel"] {
   background-color: #60b4e9;
   border-radius: 50px;
   text-decoration: none;
+  cursor: pointer;
 }
 .reward-box a:hover {
   background-color: rgba(96, 180, 233, 0.8);
