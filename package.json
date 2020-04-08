@@ -1,6 +1,10 @@
 {
   "name": "luno",
-  "version": "0.1.1",
+  "version": "3.0.0",
+  "keywords": ["ghost-theme"],
+  "engines": {
+    "ghost-api": "v3"
+  },
   "author": {
     "email": "luna_yj@hotmail.com",
     "name": "Luna Shu"
