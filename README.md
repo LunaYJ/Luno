@@ -1,4 +1,4 @@
-# Luno, A Ghost Theme for Ghost2.0
+# Luno, A Ghost Theme for Ghost3.x
 
 
 ## 总览
