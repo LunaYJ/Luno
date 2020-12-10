@@ -50,9 +50,12 @@
     text-align: center;
     display: block;
   }
-
+  a {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
   pre {
-    width: 95%;
+    //width: 95%;
     overflow: auto;
   }
 

@@ -4,6 +4,7 @@
 
 .read-more {
   margin-bottom: 1em;
+  border-top: 2px solid $gray-light;
 }
 
 .read-more-item {
@@ -21,7 +22,7 @@
 .read-more-item.read-more-item-left {
   float: left;
 }
-  
+
 .read-more-item.read-more-item-right {
   float: right;
 }
