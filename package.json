@@ -1,6 +1,6 @@
 {
   "name": "luno",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "keywords": ["ghost-theme"],
   "engines": {
     "ghost-api": "v3"
