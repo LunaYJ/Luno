@@ -41,6 +41,16 @@
 
 </head>
 <body class="{{body_class}}">
+<div class="extra-effect-wrap">
+  <div class="effect-fn-switch-group">
+    <button type="button" id="btn-snow-effect">下雪</button>
+  </div>
+  <div class="extra-effect-container">
+    <div class="snow" id="snow">
+    </div>
+  </div>
+</div>
+
 
 <span class="mobile btn-mobile-menu">
         <i class="fa fa-list btn-mobile-menu__icon"></i>
@@ -77,11 +87,25 @@
 {{! Highlight.js }}
 <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
 <script type="text/javascript" src="{{asset "js/highlightjs-line-numbers.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/snow-effect.js"}}"></script>
 <script>
   hljs.initHighlightingOnLoad();
   hljs.initLineNumbersOnLoad({
     singleLine: true
   });
+  $(function () {
+    toggleSnow({
+      count: 500,
+      target: 'snow'
+    })
+    $('#btn-snow-effect').on('click', function () {
+      toggleSnow({
+        count: 500,
+        target: 'snow'
+      })
+    });
+  })
+
 </script>
 </body>
 </html>
