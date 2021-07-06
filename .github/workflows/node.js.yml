@@ -1,0 +1,35 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Backup CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - name: Sync
+      uses: actions/checkout@v2
+      with:
+        ref: master
+    - name: Push to Coding
+      uses: x-actions/gh-pages@release/v1
+      env:
+        GITHUB_EMAIL: "luna_yj@hotmail.com"
+        GITHUB_USERNAME: "卢纳黍"
+        PUBLISH_REPO: https://mwcBpMGFbf:af38880e7423beae5a5d352f557696f51692d6da@e.coding.net/lunashu/Luno-Theme-for-Ghost.git
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./
+      # DEPLOY_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}

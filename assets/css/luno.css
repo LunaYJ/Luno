@@ -478,7 +478,13 @@ hr {
   border-radius: 20px;
   padding: 6px 8px;
   font-size: .8em;
-  margin-left: 10px; }
+  margin-left: 10px;
+  display: inline-block;
+}
+.btn-border-small:hover {
+  background-color: #BF1827;
+  color: #fff;
+}
 
 .btn-secondary {
   border-color: #5BA4E5;
