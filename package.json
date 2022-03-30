@@ -2,9 +2,7 @@
   "name": "luno",
   "version": "3.0.1",
   "keywords": ["ghost-theme"],
-  "engines": {
-    "ghost-api": "v3"
-  },
+  "engines": {},
   "author": {
     "email": "luna_yj@hotmail.com",
     "name": "Luna Shu"
