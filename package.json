@@ -10,5 +10,6 @@
   "config": {
     "posts_per_page": 10,
     "card_assets": true
-  }
+  },
+  "license": "MIT"
 }
