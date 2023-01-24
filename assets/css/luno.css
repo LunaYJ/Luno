@@ -1120,6 +1120,14 @@ input[type="tel"]:-ms-input-placeholder {
     top: 0;
     left: 0;
 }
+.search-fn .luno-search {
+    background-color: transparent;
+    color: #fff;
+    border: 0 none;
+}
+.search-fn .gh-search-icon {
+    color: #fff!important;
+}
 .effect-fn-switch-group {
     position: fixed;
     top: 6px;
