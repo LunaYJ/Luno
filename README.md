@@ -12,6 +12,12 @@
 
 如果您打算使用 [Disqus](https://disqus.com) 的话，集成评论系统就只是填一个用户名那么简单。您也可以使用 [Font Awesome](http://fontawesome.io) 的图标字体来获得更好的表现。这些不仅对于个人站点 (比如博客) 来说是很好的选择，对于一些商用的 CMS (内容管理系统) 来说也是不错的解决方案。
 
+#### Disqus 使用
+`Settings -> Code injection -> Site header / Site footer` 添加如下代码
+```javascript
+  var disqus_shortname = 'Your Disque Shortname'; // required: replace example with your forum shortname
+```
+
 
 ### 代码高亮
 
